@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html-en>
+
+<head>
+  <!-- Created by Seung Jun Lee, with inspiration from Apple.ca -->
+  <meta charset="UTF-8">
+  <title>Legend of Kobe Bryant</title>
+  <link type="text/css" href="css/normalize.css" rel="stylesheet">
+	<link type="text/css" href="css/styles.css" rel="stylesheet">
+	<link type="text/css" href="css/career-styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- The following script is based upon, and adjusted from, Professor Harold Sikkema's teachings on May 19, 2020.  -->
+  <script>
+    function toggleMenu() {
+      var dropDownMenu = document.getElementById("dropDownMenu");
+      dropDownMenu.classList.toggle('open');
+    }
+  </script>
+
+</head>
+
+<body>
+  <header>
+    <nav id="navigationPrimary">
+      <ul class="menuList">
+        <li class="logo"><a href="index.html">
+          <img width="50" height="30" id="mainLogo" src="img/24.png" alt="website icon">
+        </a></li>
+        <li class="item"><a href="career.html">Career</a></li>
+        <li class="item"><a href="#">Player-Profile</a></li>
+        <li class="item"><a href="business.html">Off the Court</a></li>
+        <li class="item facebookicon"><a href="https://www.facebook.com/Kobe/"><i class="fa fa-facebook-square" style="font-size:36px"></i></a></li>
+        <li class="item instagramicon"><a href="https://www.instagram.com/kobebryant/?hl=en"><i class="fa fa-instagram" style="font-size:36px"></i></a></li>
+      </ul>
+      <ul class="hiddenMenu">
+        <li class="menuIcon">
+          <a class="menuButton" onclick="toggleMenu();">
+            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="32" height="32" viewBox="0 0 171 171" style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,171.99777v-171.99777h171.99777v171.99777z" fill="none"></path><g fill="#ffffff"><path d="M42.75,26.71875c-8.79031,0 -16.03125,7.24094 -16.03125,16.03125c0,8.79031 7.24094,16.03125 16.03125,16.03125h85.5c8.79031,0 16.03125,-7.24094 16.03125,-16.03125c0,-8.79031 -7.24094,-16.03125 -16.03125,-16.03125zM42.75,37.40625h85.5c3.01938,0 5.34375,2.32437 5.34375,5.34375c0,3.01938 -2.32437,5.34375 -5.34375,5.34375h-85.5c-3.01938,0 -5.34375,-2.32437 -5.34375,-5.34375c0,-3.01938 2.32437,-5.34375 5.34375,-5.34375zM42.75,69.46875c-8.79031,0 -16.03125,7.24094 -16.03125,16.03125c0,8.79031 7.24094,16.03125 16.03125,16.03125h85.5c8.79031,0 16.03125,-7.24094 16.03125,-16.03125c0,-8.79031 -7.24094,-16.03125 -16.03125,-16.03125zM42.75,80.15625h85.5c3.01938,0 5.34375,2.32437 5.34375,5.34375c0,3.01938 -2.32437,5.34375 -5.34375,5.34375h-85.5c-3.01938,0 -5.34375,-2.32437 -5.34375,-5.34375c0,-3.01938 2.32437,-5.34375 5.34375,-5.34375zM42.75,112.21875c-8.79031,0 -16.03125,7.24094 -16.03125,16.03125c0,8.79031 7.24094,16.03125 16.03125,16.03125h85.5c8.79031,0 16.03125,-7.24094 16.03125,-16.03125c0,-8.79031 -7.24094,-16.03125 -16.03125,-16.03125zM42.75,122.90625h85.5c3.01938,0 5.34375,2.32437 5.34375,5.34375c0,3.01938 -2.32437,5.34375 -5.34375,5.34375h-85.5c-3.01938,0 -5.34375,-2.32437 -5.34375,-5.34375c0,-3.01938 2.32437,-5.34375 5.34375,-5.34375z">
+            </path></g></g></svg></a>
+        </li>
+        <li class="specialLogo"><a href="index.html">
+          <img width="50" height="30" id="hiddenLogo" src="img/24.png" alt="website icon">
+        </a></li></li>
+      </ul>
+      <ul id="dropDownMenu">
+        <li class="item"><a href="career.html">Career</a></li>
+        <li class="item"><a href="player-profile.html">Player-Profile</a></li>
+        <li class="item"><a href="business.html">Off the Court</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main mainFix">
+    <div class="billBoard">
+      <div class="contentContainer">
+        <div class="profileInfo">
+          <h2 class="billboardHeader">Kobe's Player Profile</h2>
+          <p class="billboardP">"One of the most dangerous scorers in the NBA"</p>
+        </div>
+        <div class="billboardImage">
+          <img id="kobeFade" src="img/kobe-fade.png" alt="Kobe's classic fade-away shot.">
+        </div>
+      </div>
+    </div>
+    <div class="billBox">
+      <header class="boxHeader">
+        <h2 class="boxHeaderline">Kobe Bryant #24</h2>
+        <p class="boxheaderP">Primary Position: Shooting Guard</p>
+      </header>
+      <div class="textBox">
+        <p class="boxP">Kobe is a 6 feet 4 inches (1.93m) shooting guard that plays in a similar playstyle to Michael Jordan.  Like Jordan, he is well known for his fade-away jump shot.  As such, cries of Kobe's name is often heard by basketball players when they attempt a fade-away shot.  Bryant is known for both his offensive and defensive abilities. In particular, his ability to clutch in tense situations is incredible. Kobe is known to take insane shots while being defended by two or three players.  On this matter, critics state that Kobe is far too selfish with his gameplay. However, Kobe has closed the mouths of the critics countless times with his ability to close out games with the buzzer beater.  He is knwon as the league's premier closer.</p>
+        <p class="boxP">Kobe's work ethic is incredible.  Especially in the later years of his career, Bryant often experienced severe injuries in his knee, shoulder and face.  He is known to persevere through the pain and participate in practices or games.  While this decision seems risky, Lakers without Kobe lacked soul and performed poor in almost all games.</p>
+        <div class="quote">
+          <h2>“Kobe [in the year 2004-2007] was the most alienated superstar the NBA had ever seen”</h2>
+          <p>--Forbes(2014)</p>
+        </div>
+        <p class="boxP">Kobe's relationship with other players is known to be fairly poor in the early years.  Due to his competitive nature, he was widely considered to be a player difficult to play with and against.  However, after the departure of Shaquille O'Neal, Kobe took the role of the team's mentor.  His atmosphere changed from the once "selfish, high-volume shooter" to a Hall-of-Fame material player that is able to work as a team and lead the team.</p>
+        <div class="quote wideStyle">
+          <h2>“[Bryant] embraced the team and his teammates, calling them up when we were on the road and inviting them out to dinner.  It was as if the other players were now his partners, not his personal spear-carriers”</h2>
+          <p>--Phil Jackson</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer id="globalFooter">
+    <div class="footerContent">
+      <section class="footNotes"> <!-- This section provides credits to providers of any images or icons that I have used  -->
+        <ul>
+          <li>
+            <span>Seung Jun Lee has created this website for academic purposes in his stuides at the University of Toronto.  Its content is sourced from <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#Player_profile">Wikipedia</a>.  The design layout and aesthetics are inspired by the <a href="apple.com">Apple website</a>. The Drop-Down Menu bar that shows up when the screen is shrunk is based upon, and adjusted from, Professor Harold Sikkema's teachings on May 19, 2020.
+            </span>
+          </li>
+          <li>
+            <span> Credits and thanks goes out to <a href="https://unsplash.com/photos/8hW2ZB4OHZ0">Ramiro Pianarosa</a>, <a href="https://unsplash.com/photos/YWdCmJaGchs">Olivier Collet</a>, <a href="https://unsplash.com/photos/kB5DnieBLtM">Edgar Chapparro</a>, and <a href="https://unsplash.com/photos/Ku053YCyhVU">Mick Haupt</a> for their copyright-free images on <a href="https://unsplash.com/">Unsplash</a> used on the homepage.</span>
+          </li>
+          <li>
+            <span> Credits and thanks goes out to <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Kobe_Bryant_retired_HS2.jpg">Noah Zuares</a>,<a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Lipofsky_Kobe.jpg">Steve Lipofsky</a>, <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Kobe_Bryant_Drives2.jpg">Keith Allison</a>, <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Lakers_White_House_2010.jpg">Lawrence Jackson</a>, <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Lakers_Finals_08.jpg">Eric Kilby</a>, <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:2010_NBA_Champion_Los_Angeles_Lakers_with_President_Obama.jpg">Lawrence Jackson (again)</a>, <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Masked_mamba.jpg">Keith Allison (again)</a>, <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:LeBron_James_vs._Kobe_Bryant_(24848589252).jpg">Erik Drost</a>,and
+            <a href="https://en.wikipedia.org/wiki/Kobe_Bryant#/media/File:Kobe_Bryant_Beijing_Olympics_20080810_d-1024-627v.jpg">Eric Draper</a> for the images used on the Career page.
+          </li>
+          <li>
+            <span> Credits and thanks goes out to <a href="https://commons.wikimedia.org/wiki/File:NikeTaipeiFlagshipStoreLaunch_Main.jpg">Rico Shen</a>, and <a href="https://unsplash.com/photos/E7RLgUjjazc/info">Adelou Eletu [Unsplash]</a> for the images used on the Off The Court page, and to <a href="https://commons.wikimedia.org/wiki/File:Kobe_Bryant_Shane_Battier.jpg">Steve Lanctot</a> for the images used on the Player Profile page. In addition, credits go to <a href="https://www.needpix.com/photo/download/1668900/hr24-sign-symbol-logo-icon-graphic-free-vector-graphics-free-illustrations-free-pictures">RawPixel [NeedPix]</a> and <a href="https://icons8.com/icons/set/menu">Icons8</a> for the '24' logo and the drop-down menu png art. Finally, credits to <a href="https://fontawesome.com/">FontAwesome</a> for its social media and chevron-right icons used for this website.
+            </span>
+          </li>
+          <li>
+            <span>The images used on this website are under CC BY-SA 2.0, CC BY-SA 3.0, or public domain, and are used on this site for non-commercial, academic purposes.
+          </li>
+        </ul>
+      </section>
+    </div>
+    <section class="footerBottom">
+      <div class="legalFooter">
+        Copyright ©2020 SeungJun Lee. All rights reserved.
+      </div>
+    </section>
+  </footer>
+</body>
+</html>

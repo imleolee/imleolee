@@ -1,0 +1,614 @@
+html{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+
+p{
+  font-weight: 400;
+  text-align: center;
+}
+
+div {
+  display: block;
+}
+
+/* ==Nav==*/
+
+/* Main Navigation */
+
+#navigationPrimary{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: auto;
+  min-width: auto;
+  height: 48px;
+  max-height: 44px;
+  background: #333333;
+  font-size: 17px;
+}
+
+.menuList {
+  display: flex;
+  width: auto;
+  height: 44px;
+  margin: 0 10px 0 10px;
+  cursor: default;
+  list-style: none;
+  font-size: 1rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  Justify-content: center;
+}
+
+.menuList #mainLogo{
+  display: block;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+  opacity: 1;
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  cursor: pointer;
+  order: 1;
+  margin-right: auto;
+  align-items: center;
+  height: 34.286px;
+  width: 50px;
+  margin-top: 5px;
+}
+
+.menuList li a{
+  /*padding is top, right, bottom, left*/
+  padding: 0 10px;
+  display: inline-block;
+  font-size: 14px;
+  margin: 0 0 0 0;
+  position: relative;
+  color: #f5f5f7;
+  opacity:0.807666;
+  list-style: none;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+  box-sizing: content-box;
+  padding: 0 30px 0 30px;
+  width: auto;
+}
+
+
+.menuList a:hover{
+  opacity: 1;
+}
+
+/* MediaQuery Nav */
+
+/* Tribute Span */
+
+#tributeMessage {
+  padding: 12px 0;
+  background: #fbfbfd;
+  color: #1d1d1f;
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#tributeLink {
+  color: #06c;
+  text-decoration: none;
+}
+#tributeLink:hover{
+  text-decoration: underline;
+}
+
+
+/* ==Main== */
+
+/* First Main Section */
+
+.main{
+  display: block;
+  overflow: hidden;
+  position: relative;
+  max-width: 2560px;
+  margin: 0 auto;
+  padding-top: 44px; /*height of the nav bar */
+}
+
+.homepage-section, .career-section, .profile-section, .business-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.career-section{
+  background: #131313;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  word-wrap: break-word;
+}
+
+.headline{
+  display: block;
+  text-align: center;
+  position: relative;
+  font-size: 56px;
+  font-weight: 700;
+  margin-bottom: -5px;
+  max-width: 500px;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.subhead{
+  position: absolute;
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  font-size: 28px;
+  font-weight: 400;
+  z-index: 4;
+  max-width: 400px;
+  margin-bottom: 10px;
+}
+
+#kobe-background1{
+  margin-top: 135px;
+  left: 0;
+  right: 0;
+  max-width: 700px;
+  height: 400px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  cursor: pointer;
+  border-radius: 2%;
+}
+
+.darkbackground p{
+  color: #86868b;
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 135px;
+  z-index: 3;
+  font-weight: 400;
+  font-size: 17px;
+}
+
+.darkbackground h2, .darkbackground h3{
+  color: #f5f5f7;
+}
+
+.links a{
+  color:#2997ff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 21px;
+  font-weight: 700;
+  text-align: center;
+}
+
+#learn-link{
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  margin-top: 153px;
+}
+
+#learn-link:hover{
+  text-decoration: underline;
+}
+
+#chevron1{
+  margin-top: 5px;
+}
+
+/* Second Main section */
+
+.profile-section{
+  background: #E8E8E9;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  word-wrap: break-word;
+}
+
+.whitebackground h2, .whitebackground h3{
+  color: #1d1d1f;
+}
+
+.whitebackground h2{
+  margin-top: 35px;
+}
+.whitebackground p{
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  margin-top: 135px;
+  z-index: 3;
+  font-weight: 400;
+  font-size: 17px;
+  color: #86868b
+}
+
+#kobe-background2{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  height: 350px;
+  background-size: cover;
+  margin-top: 138px;
+  opacity: .9;
+  border-radius: 2%;
+}
+
+/* Third Main Section */
+/* This section does not use absolute positioning as the link colour does not meet the WCAG 2.0 requirements of good colour contrast with the image that is being used */
+
+.business-section{
+  background: #131313;
+  background-size: cover;
+  width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right:auto;
+  word-wrap: break-word;
+}
+
+.business-section .subhead{
+  position: relative;
+  text-align: center;
+  display: block;
+  font-size: 28px;
+  font-weight: 400;
+  max-width: 400px;
+}
+
+#noMarginPara{
+  margin-top: 0;
+}
+
+#noMargin-learn-link{
+  position: relative;
+  display:block;
+  margin-top: 50px;
+}
+
+#noMargin-learn-link:hover{
+  text-decoration: underline;
+}
+
+#kobe-background3{
+  position: relative;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 700px;
+  height: 300px;
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  opacity: .9;
+  border-radius: 2%;
+}
+
+/* ==Footer== */
+
+#globalFooter{
+  margin: 5px auto;
+  font-size: 12px;
+  line-height: 2;
+  font-weight: 400;
+  background-color: #f5f5f7;
+  color: #1d1d1f;
+  min-width: 1024px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+#globalFooter a{
+  color: #06c;
+  text-decoration: none;
+}
+
+#globalFooter a:hover{
+  text-decoration: underline;
+}
+
+/* First Footer Section */
+#globalFooter .footerContent{
+  border-bottom: 1px solid #d2d2d7;
+  color: #86868b;
+  padding: 17px 0 11px;
+  box-sizing: content-box;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  max-width: 800px;
+}
+
+#globalFooter .footerContent ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+#globalFooter .footerContent li{
+  padding-bottom: 10px;
+}
+
+/* FooterBottom*/
+
+.footerBottom{
+  padding: 0 0 5px;
+  border-top: 1px solid #d2d2d7;
+  color: #86868b;
+  display: block;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* MediaQuery DropDownMenu */
+
+.hiddenMenu{
+  display: none;
+  width: auto;
+  height: 44px;
+  margin: 0 10px 0 10px;
+  cursor: default;
+  list-style: none;
+  font-size: 1rem;
+  align-items: center;
+  flex-wrap: nowrap;
+  Justify-content: center;
+}
+
+
+.hiddenMenu ul{
+  list-style: none;
+}
+
+.menuIcon{
+  display: none;
+}
+
+.menuIcon a:hover{
+  cursor: pointer;
+}
+
+
+.specialLogo{
+  display: none;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+  background-size: 16px 44px;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 16px;
+  cursor: pointer;
+  order: 1;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  height: 34.286px;
+  margin-top: 5px;
+  padding-right: 8%;
+}
+
+/*hidden Menu css */
+#dropDownMenu{
+  display: none;
+  position: relative;
+  max-width: 80rem;
+  margin: 0 auto;
+  z-index: 100;
+  background: #545454;
+  width: 25rem;
+  top: -5px;
+}
+
+#dropDownMenu.open{
+  display: block;
+}
+
+#dropDownMenu li {
+  list-style-type: none;
+}
+
+#dropDownMenu li a{
+  color: #fff;
+  display: block;
+  text-align: center;
+  font-size: .9rem;
+  margin: .3rem .5rem;
+  padding: .7rem .5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#dropDownMenu li a:hover{
+  background: #fff;
+  color: #e60505;
+  text-decoration: none;
+}
+
+
+@media screen and (max-width: 700px){
+  .hiddenMenu{
+    display: flex;
+  }
+  .specialLogo{
+    display: block;
+  }
+  .menuIcon{
+    display: block;
+    z-index: 10;
+  }
+  .menuList{
+    display: none;
+  }
+}
+
+/* 1) Quick fix to prevent the drop-down menu from staying opened when the window is resized back to full-screen*/
+
+@media screen and (min-width: 700px){
+  #dropDownMenu.open{
+    display: none;
+  }
+}
+
+
+/* Adding Other MediaQuery interactions when size shrinks*/
+/*Career Page and Footer*/
+@media screen and (max-width: 780px){
+  .leftcontentSection{
+    display: block !important;
+  }
+  #retiredJersey{
+    width: 400px;
+    margin: 40px auto 30px 10% !important;
+  }
+  #globalFooter{
+    max-width: 500px !important;
+    min-width: 100px;
+  }
+  .footerContent{
+    margin: 0 10px 0 10px !important;
+  }
+  .columnImages{
+    width: 160px !important;
+  }
+  .column-content{
+    padding-left: 3px !important;
+  }
+  #nbaKobe{
+    max-width: 400px !important;
+  }
+  .halfSubhead p{
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
+/* Unknown Pading on the <p> of Career page was unable to be fixed */
+
+/*Player Profile Page & Off the Court Page*/
+
+@media screen and (max-width: 780px){
+  .profileInfo{
+    position: relative !important;
+    padding-top: 30px !important;
+    text-align: center !important;
+  }
+  .billboardP{
+    padding-right: 50% !important;
+  }
+  .billboardImage{
+    margin-left: 0 !important;
+  }
+  #kobeFade{
+    margin-left: 0 !important;
+  }
+  .billBox{
+    max-width: 480px !important;
+    padding: 10px 20px 10px 20px !important;
+  }
+  .billBox p{
+    line-height: 1.7 !important;
+  }
+  #otc_headline{
+    max-width: none !important;
+  }
+  .rightcontentSection{
+    display: block !important;
+  }
+  #nikeImage{
+    position: unset !important;
+    display: block !important;
+    margin: 0 auto 10px 10px !important;
+    left: 0 !important;
+  }
+  .halfContent .readjust{
+    left: 7% !important;
+  }
+  .halfSubhead{
+    margin-left:50px !important;
+  }
+  .mediaChange{
+    margin-top: 10px !important;
+    max-width: 350px !important;
+    margin-left: 75px !important;
+  }
+  .halfHeadline{
+    max-width: 350px !important;
+    margin-left: 100px !important;
+  }
+
+  .widthChange{
+    width: 24rem !important;
+  }
+
+  #marginFix{
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+}
+
+/* changes to homepage MediaQuery */
+@media screen and (max-width: 780px){
+  #kobe-background1{
+    max-width: none !important;
+    width: 350px !important;
+  }
+  #kobe-background2{
+    max-width: none !important;
+    width: 350px !important;
+  }
+  #kobe-background3{
+    max-width: none !important;
+    width: 350px !important;
+    margin-left: 70px !important;
+  }
