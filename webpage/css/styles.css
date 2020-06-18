@@ -1,614 +1,742 @@
-html{
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  line-height: normal;
+nav {
+  border-bottom: none !important;
 }
 
+#copyrightParagraph p {
+  font-size: 12px !important;
+  color: rgb(106, 106, 106);
+  text-indent: 3rem;
+  line-height: 2rem;
+}
 
-p{
-  font-weight: 400;
+#copyrightFooter {
+  border-top: solid rgb(228, 228, 228);
+  padding-top: 10px;
+}
+
+#home .carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#home .carousel h5 {
+  color: white;
+}
+
+#home .carousel-item img {
+  max-height: 500px;
+  opacity: 0.7;
+}
+
+#home .card-img-top {
+  height: 17em;
+  object-fit: cover;
+}
+
+#home input[type="button"]:hover {
+  color: #FF0000;
+}
+
+#home p {
+  text-indent: 3rem;
+  line-height: 2rem;
+}
+
+.jumbotron {
+  background-blend-mode: darken;
+}
+
+#art .jumbotron {
+  background-image: url(../img/artbanner.jpg);
+  background-position: 30%;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0, 0.6);
   text-align: center;
 }
 
-div {
-  display: block;
+#art .jumbotron h1, .lead {
+  padding-top: 30px;
 }
 
-/* ==Nav==*/
+#art .carousel-inner h5 {
+  color: white;
+}
 
-/* Main Navigation */
-
-#navigationPrimary{
-  position: absolute;
+#art .carousel-caption {
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  left: 0;
   top: 0;
-  right: 0;
-  left: 0;
-  z-index: 9999;
-  display: block;
-  margin: 0;
-  width: auto;
-  min-width: auto;
-  height: 48px;
-  max-height: 44px;
-  background: #333333;
-  font-size: 17px;
 }
 
-.menuList {
-  display: flex;
-  width: auto;
-  height: 44px;
-  margin: 0 10px 0 10px;
-  cursor: default;
-  list-style: none;
-  font-size: 1rem;
-  align-items: center;
-  flex-wrap: nowrap;
-  Justify-content: center;
+#psModalCenter .carousel-caption {
+  background: rgba(0, 0, 0, 0.5)
 }
 
-.menuList #mainLogo{
-  display: block;
-  position: relative;
-  text-align: left;
-  z-index: 1;
-  opacity: 1;
-  background-size: 16px 44px;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 16px;
-  cursor: pointer;
-  order: 1;
-  margin-right: auto;
-  align-items: center;
-  height: 34.286px;
-  width: 50px;
-  margin-top: 5px;
-}
-
-.menuList li a{
-  /*padding is top, right, bottom, left*/
-  padding: 0 10px;
-  display: inline-block;
-  font-size: 14px;
-  margin: 0 0 0 0;
-  position: relative;
-  color: #f5f5f7;
-  opacity:0.807666;
-  list-style: none;
-  text-decoration: none;
-  white-space: nowrap;
-  cursor: pointer;
-  box-sizing: content-box;
-  padding: 0 30px 0 30px;
-  width: auto;
-}
-
-
-.menuList a:hover{
-  opacity: 1;
-}
-
-/* MediaQuery Nav */
-
-/* Tribute Span */
-
-#tributeMessage {
-  padding: 12px 0;
-  background: #fbfbfd;
-  color: #1d1d1f;
-  margin-top: 0;
-  font-size: 14px;
-  font-weight: 700;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#tributeLink {
-  color: #06c;
+#art .carousel-caption a:hover {
   text-decoration: none;
 }
-#tributeLink:hover{
-  text-decoration: underline;
+
+#art ul.nav li.nav-item a.nav-link:hover {
+  background-color: rgb(255, 80, 80, 0.5);
 }
 
-
-/* ==Main== */
-
-/* First Main Section */
-
-.main{
-  display: block;
-  overflow: hidden;
-  position: relative;
-  max-width: 2560px;
-  margin: 0 auto;
-  padding-top: 44px; /*height of the nav bar */
-}
-
-.homepage-section, .career-section, .profile-section, .business-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.career-section{
-  background: #131313;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-  margin-left: auto;
-  margin-right:auto;
-  word-wrap: break-word;
-}
-
-.headline{
-  display: block;
-  text-align: center;
-  position: relative;
-  font-size: 56px;
-  font-weight: 700;
-  margin-bottom: -5px;
-  max-width: 500px;
-  right: 0;
-  left: 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.subhead{
-  position: absolute;
-  text-align: center;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  font-size: 28px;
-  font-weight: 400;
-  z-index: 4;
-  max-width: 400px;
-  margin-bottom: 10px;
-}
-
-#kobe-background1{
-  margin-top: 135px;
-  left: 0;
-  right: 0;
-  max-width: 700px;
-  height: 400px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  z-index: 1;
-  cursor: pointer;
-  border-radius: 2%;
-}
-
-.darkbackground p{
-  color: #86868b;
-  position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  margin-top: 135px;
-  z-index: 3;
-  font-weight: 400;
-  font-size: 17px;
-}
-
-.darkbackground h2, .darkbackground h3{
-  color: #f5f5f7;
-}
-
-.links a{
-  color:#2997ff;
-  text-decoration: none;
-  cursor: pointer;
-  font-size: 21px;
-  font-weight: 700;
+#music .jumbotron {
+  background-image: url(../img/guitarBanner.jpg);
+  background-position: center center;
+  background-size: 100% 82%;
+  background-attachment: fixed;
+  background-color: rgb(0, 0, 0, 0.6);
+  background-repeat: no-repeat !important;
   text-align: center;
 }
 
-#learn-link{
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  z-index: 4;
-  margin-top: 153px;
-}
-
-#learn-link:hover{
-  text-decoration: underline;
-}
-
-#chevron1{
-  margin-top: 5px;
-}
-
-/* Second Main section */
-
-.profile-section{
-  background: #E8E8E9;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-  margin-left: auto;
-  margin-right:auto;
-  word-wrap: break-word;
-}
-
-.whitebackground h2, .whitebackground h3{
-  color: #1d1d1f;
-}
-
-.whitebackground h2{
-  margin-top: 35px;
-}
-.whitebackground p{
-  position: absolute;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  margin-top: 135px;
-  z-index: 3;
-  font-weight: 400;
-  font-size: 17px;
-  color: #86868b
-}
-
-#kobe-background2{
-  position: relative;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
-  height: 350px;
-  background-size: cover;
-  margin-top: 138px;
-  opacity: .9;
-  border-radius: 2%;
-}
-
-/* Third Main Section */
-/* This section does not use absolute positioning as the link colour does not meet the WCAG 2.0 requirements of good colour contrast with the image that is being used */
-
-.business-section{
-  background: #131313;
-  background-size: cover;
-  width: 100%;
-  position: relative;
-  margin-left: auto;
-  margin-right:auto;
-  word-wrap: break-word;
-}
-
-.business-section .subhead{
-  position: relative;
-  text-align: center;
-  display: block;
-  font-size: 28px;
-  font-weight: 400;
+#guitarProfile img {
+  max-height: 700px;
   max-width: 400px;
 }
 
-#noMarginPara{
-  margin-top: 0;
+#music p {
+  text-indent: 3rem;
+  line-height: 2rem;
 }
 
-#noMargin-learn-link{
-  position: relative;
-  display:block;
-  margin-top: 50px;
-}
-
-#noMargin-learn-link:hover{
-  text-decoration: underline;
-}
-
-#kobe-background3{
-  position: relative;
-  left: 0;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  width: 700px;
-  height: 300px;
-  background-size: cover;
-  margin-top: 20px;
-  margin-bottom: 15px;
-  opacity: .9;
-  border-radius: 2%;
-}
-
-/* ==Footer== */
-
-#globalFooter{
-  margin: 5px auto;
-  font-size: 12px;
-  line-height: 2;
-  font-weight: 400;
-  background-color: #f5f5f7;
-  color: #1d1d1f;
-  min-width: 1024px;
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-#globalFooter a{
-  color: #06c;
-  text-decoration: none;
-}
-
-#globalFooter a:hover{
-  text-decoration: underline;
-}
-
-/* First Footer Section */
-#globalFooter .footerContent{
-  border-bottom: 1px solid #d2d2d7;
-  color: #86868b;
-  padding: 17px 0 11px;
-  box-sizing: content-box;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0;
-  max-width: 800px;
-}
-
-#globalFooter .footerContent ul{
-  list-style: none;
-  padding-left: 0;
-}
-
-#globalFooter .footerContent li{
-  padding-bottom: 10px;
-}
-
-/* FooterBottom*/
-
-.footerBottom{
-  padding: 0 0 5px;
-  border-top: 1px solid #d2d2d7;
-  color: #86868b;
-  display: block;
-  font-size: 12px;
-  font-weight: 400;
-  text-align: center;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* MediaQuery DropDownMenu */
-
-.hiddenMenu{
-  display: none;
-  width: auto;
-  height: 44px;
-  margin: 0 10px 0 10px;
-  cursor: default;
-  list-style: none;
-  font-size: 1rem;
-  align-items: center;
-  flex-wrap: nowrap;
-  Justify-content: center;
-}
-
-
-.hiddenMenu ul{
-  list-style: none;
-}
-
-.menuIcon{
-  display: none;
-}
-
-.menuIcon a:hover{
-  cursor: pointer;
-}
-
-
-.specialLogo{
-  display: none;
-  position: relative;
-  z-index: 1;
-  opacity: 1;
-  background-size: 16px 44px;
+#mgm .jumbotron {
+  background-image: url(../img/collegiatebanner.png);
+  background-size: 100% 100%;
+  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-position: center;
-  width: 16px;
-  cursor: pointer;
-  order: 1;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
-  height: 34.286px;
-  margin-top: 5px;
-  padding-right: 8%;
+  background-color: rgb(0, 0, 0, 0.4);
+  text-align: center;
 }
 
-/*hidden Menu css */
-#dropDownMenu{
-  display: none;
-  position: relative;
-  max-width: 80rem;
-  margin: 0 auto;
-  z-index: 100;
-  background: #545454;
-  width: 25rem;
-  top: -5px;
+#mgm p {
+  text-indent: 3rem;
+  line-height: 2rem;
 }
 
-#dropDownMenu.open{
-  display: block;
+#mgm p a {
+  color: blue;
 }
 
-#dropDownMenu li {
+#mgm p a:hover {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(255, 80, 80, 0.5);
+}
+
+#mgm iframe {
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+#mgm .blockquote-footer {
+  width: 100%;
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+#contact .jumbotron {
+  background-image: url(../img/contactBanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0, 0.4)
+}
+
+#contact p.lead {
+  padding-top: 150px;
+}
+
+#process .jumbotron {
+  background-image: url(../img/processBanner.jpg);
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: rgb(0, 0, 0, 0.4);
+}
+
+#processBody p {
+  text-indent: 3rem;
+  line-height: 2.5rem;
+}
+
+#sketch img {
+  max-height: 500px;
+  max-width: 400px;
+}
+
+#process p a {
+  color: blue;
+}
+
+#process a:hover {
+  text-decoration: none;
+  opacity: .7;
+}
+
+footer li {
   list-style-type: none;
-}
-
-#dropDownMenu li a{
-  color: #fff;
-  display: block;
+  margin-top: 15px;
   text-align: center;
-  font-size: .9rem;
-  margin: .3rem .5rem;
-  padding: .7rem .5rem;
-  text-transform: uppercase;
+}
+
+footer a {
+  opacity: .8;
+  font-weight: bold;
+  color: blue;
+}
+
+footer a:hover {
   text-decoration: none;
+  opacity: 1;
 }
 
-#dropDownMenu li a:hover{
-  background: #fff;
-  color: #e60505;
-  text-decoration: none;
-}
-
-
-@media screen and (max-width: 700px){
-  .hiddenMenu{
-    display: flex;
-  }
-  .specialLogo{
-    display: block;
-  }
-  .menuIcon{
-    display: block;
-    z-index: 10;
-  }
-  .menuList{
-    display: none;
-  }
-}
-
-/* 1) Quick fix to prevent the drop-down menu from staying opened when the window is resized back to full-screen*/
-
-@media screen and (min-width: 700px){
-  #dropDownMenu.open{
-    display: none;
-  }
-}
-
-
-/* Adding Other MediaQuery interactions when size shrinks*/
-/*Career Page and Footer*/
-@media screen and (max-width: 780px){
-  .leftcontentSection{
-    display: block !important;
-  }
-  #retiredJersey{
-    width: 400px;
-    margin: 40px auto 30px 10% !important;
-  }
-  #globalFooter{
-    max-width: 500px !important;
-    min-width: 100px;
-  }
-  .footerContent{
-    margin: 0 10px 0 10px !important;
-  }
-  .columnImages{
-    width: 160px !important;
-  }
-  .column-content{
-    padding-left: 3px !important;
-  }
-  #nbaKobe{
-    max-width: 400px !important;
-  }
-  .halfSubhead p{
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-}
-/* Unknown Pading on the <p> of Career page was unable to be fixed */
-
-/*Player Profile Page & Off the Court Page*/
-
-@media screen and (max-width: 780px){
-  .profileInfo{
-    position: relative !important;
-    padding-top: 30px !important;
-    text-align: center !important;
-  }
-  .billboardP{
-    padding-right: 50% !important;
-  }
-  .billboardImage{
-    margin-left: 0 !important;
-  }
-  #kobeFade{
-    margin-left: 0 !important;
-  }
-  .billBox{
-    max-width: 480px !important;
-    padding: 10px 20px 10px 20px !important;
-  }
-  .billBox p{
-    line-height: 1.7 !important;
-  }
-  #otc_headline{
-    max-width: none !important;
-  }
-  .rightcontentSection{
-    display: block !important;
-  }
-  #nikeImage{
-    position: unset !important;
-    display: block !important;
-    margin: 0 auto 10px 10px !important;
-    left: 0 !important;
-  }
-  .halfContent .readjust{
-    left: 7% !important;
-  }
-  .halfSubhead{
-    margin-left:50px !important;
-  }
-  .mediaChange{
-    margin-top: 10px !important;
-    max-width: 350px !important;
-    margin-left: 75px !important;
-  }
-  .halfHeadline{
-    max-width: 350px !important;
-    margin-left: 100px !important;
+/* mediaquery for jumbotron/carousel on mobile */
+@media only screen and (max-width: 800px) {
+  #art .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
   }
 
-  .widthChange{
-    width: 24rem !important;
+  #music .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
   }
 
-  #marginFix{
-    text-align: left !important;
-    margin-left: 0 !important;
+  #mgm .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-position: center center;
+  }
+
+  #contact .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-position: center center;
+  }
+
+  #home .carousel-item img {
+    max-height: 230px;
+    opacity: 0.7;
+  }
+  .carousel-caption h5{
+    font-size: 1rem !important;
+  }
+  .carousel-caption p{
+    font-size: .7rem !important;
+  }
+  #mgmHeader {
+    font-size: 2.7rem !important;
+  }
+  #guitarProfile img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #youtubeVid{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #youtubeContainer{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    padding-left: none !important;
+  }
+  #collegiateAd{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #teamPicture{
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 }
 
-/* changes to homepage MediaQuery */
-@media screen and (max-width: 780px){
-  #kobe-background1{
-    max-width: none !important;
-    width: 350px !important;
+/* iphone X media query */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  #art .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
   }
-  #kobe-background2{
-    max-width: none !important;
-    width: 350px !important;
+
+  #music .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
   }
-  #kobe-background3{
-    max-width: none !important;
-    width: 350px !important;
-    margin-left: 70px !important;
+
+  #mgm .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-position: center center;
   }
+
+  #contact .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-position: center center;
+  }
+
+  #home .carousel-item img {
+    max-height: 230px;
+    opacity: 0.7;
+}
+  .carousel-caption h5{
+    font-size: 1rem !important;
+  }
+  .carousel-caption p{
+    font-size: .7rem !important;
+  }
+  #mgmHeader {
+    font-size: 2.7rem;
+  }
+  #guitarProfile img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #youtubeVid{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #youtubeContainer{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    padding-left: none !important;
+  }
+  #collegiateAd{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #teamPicture{
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* galaxy phone media query */
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+  #art .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
+
+  #music .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+  }
+
+  #mgm .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-position: center center;
+  }
+
+  #contact .jumbotron {
+    background-attachment: scroll !important;
+    background-size: 100% 50% !important;
+    background-repeat: no-repeat !important;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-position: center center;
+  }
+
+  #home .carousel-item img {
+    max-height: 230px;
+    opacity: 0.7;
+  }
+  .carousel-caption h5{
+    font-size: 1rem !important;
+  }
+  .carousel-caption p{
+    font-size: .7rem !important;
+  }
+  #mgmHeader {
+    font-size: 2.7rem;
+  }
+  #guitarProfile img{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #youtubeVid{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #youtubeContainer{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+    padding-left: none !important;
+  }
+  #collegiateAd{
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: 100% !important;
+  }
+  #teamPicture{
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Footer CSS - Credits go to Michael Rossi from https://codepen.io/michaelrossi/pen/RWxmbb/ for the Social media icon styling.  His CSS codes are slightly adjusted to fit the website. */
+#social-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+}
+
+#social-container li {
+  color: rgba(167, 146, 129, 0.6);
+  list-style-type: none;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  padding: 1%;
+  border: 2px solid rgba(167, 146, 129, 0.4);
+  cursor: pointer;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  transition: ease .3s;
+}
+
+#social-container li:hover {
+  color: rgba(167, 146, 129, 1);
+  border: 1px solid rgba(167, 146, 129, 1);
+}
+
+.social:hover>li {
+  opacity: 0.5;
+}
+
+.social:hover>li:hover {
+  opacity: 1;
+}
+
+/* Music Player. Credit to https://codepen.io/Roro-decode/pen/VWpLRm*/
+/* Start  styling the page */
+.container-audio {
+  width: 66%;
+  height: auto;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #eee;
+  color: #444;
+  margin: 20px auto;
+  overflow: hidden;
+}
+
+audio {
+  width: 100%;
+}
+
+audio:nth-child(2), audio:nth-child(4), audio:nth-child(6) {
+  margin: 0;
+}
+
+.container-audio .colum1 {
+  width: 23px;
+  height: 5em;
+  border-radius: 5px;
+  margin: 0 10px 0 0;
+  display: inline-block;
+  position: relative;
+}
+
+.container-audio .colum1:last-child {
+  margin: 0;
+}
+
+.container-audio .colum1 .row {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(to up, #7700aa, #8800ff);
+  position: absolute;
+  -webkit-animation: Rofa 10s infinite ease-in-out;
+  animation: Rofa 10s infinite ease-in-out;
+  bottom: 0;
+}
+
+.container-audio .colum1:nth-of-type(1) .row {
+  -webkit-animation-delay: 3.99s;
+  animation-delay: 3.99s;
+}
+
+.container-audio .colum1:nth-of-type(2) .row {
+  -webkit-animation-delay: 3.80s;
+  animation-delay: 3.80s;
+}
+
+.container-audio .colum1:nth-of-type(3) .row {
+  -webkit-animation-delay: 3.70s;
+  animation-delay: 3.70s;
+}
+
+.container-audio .colum1:nth-of-type(4) .row {
+  -webkit-animation-delay: 3.60s;
+  animation-delay: 3.60s;
+}
+
+.container-audio .colum1:nth-of-type(5) .row {
+  -webkit-animation-delay: 3.50s;
+  animation-delay: 3.50s;
+}
+
+.container-audio .colum1:nth-of-type(6) .row {
+  -webkit-animation-delay: 3.40s;
+  animation-delay: 3.40s;
+}
+
+.container-audio .colum1:nth-of-type(7) .row {
+  -webkit-animation-delay: 3.30s;
+  animation-delay: 3.30s;
+}
+
+.container-audio .colum1:nth-of-type(8) .row {
+  -webkit-animation-delay: 3.20s;
+  animation-delay: 3.20s;
+}
+
+.container-audio .colum1:nth-of-type(9) .row {
+  -webkit-animation-delay: 3.10s;
+  animation-delay: 3.10s;
+}
+
+.container-audio .colum1:nth-of-type(10) .row {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.container-audio .colum1:nth-of-type(11) .row {
+  -webkit-animation-delay: 2.1s;
+  animation-delay: 2.1s;
+}
+
+.container-audio .colum1:nth-of-type(12) .row {
+  -webkit-animation-delay: 2.10s;
+  animation-delay: 2.10s;
+}
+
+.container-audio .colum1:nth-of-type(13) .row {
+  -webkit-animation-delay: 2.20s;
+  animation-delay: 2.20s;
+}
+
+.container-audio .colum1:nth-of-type(14) .row {
+  -webkit-animation-delay: 1.30s;
+  animation-delay: 1.30s;
+}
+
+.container-audio .colum1:nth-of-type(15) .row {
+  -webkit-animation-delay: 1.40s;
+  animation-delay: 1.40s;
+}
+
+.container-audio .colum1:nth-of-type(16) .row {
+  -webkit-animation-delay: 1.50s;
+  animation-delay: 1.50s;
+}
+
+.container-audio .colum1:nth-of-type(17) .row {
+  -webkit-animation-delay: 1.60s;
+  animation-delay: 1.60s;
+}
+
+.container-audio .colum1:nth-of-type(18) .row {
+  -webkit-animation-delay: 1.70s;
+  animation-delay: 1.70s;
+}
+
+.container-audio .colum1:nth-of-type(19) .row {
+  -webkit-animation-delay: 1.80s;
+  animation-delay: 1.80s;
+}
+
+.container-audio .colum1:nth-of-type(20) .row {
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+
+@-webkit-keyframes Rofa {
+  0% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: yellow;
+  }
+
+  5% {
+    height: 100%;
+    -webkit-transform: translatey(15px);
+    transform: translatey(15px);
+    background-color: fuchsia;
+  }
+
+  10% {
+    height: 90%;
+    transform: translatey(0);
+    -webkit-transform: translatey(0);
+    background-color: bisque;
+  }
+
+  15% {
+    height: 80%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  20% {
+    height: 70%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  25% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  30% {
+    height: 70%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  35% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  40% {
+    height: 60%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  45% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  50% {
+    height: 50%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  55% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  60% {
+    height: 40%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  65% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  70% {
+    height: 30%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  75% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  80% {
+    height: 20%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  85% {
+    height: 0%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  90% {
+    height: 10%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  95% {
+    height: 5%;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+
+  100% {
+    height: 0;
+    -webkit-transform: translatey(0);
+    transform: translatey(0);
+    background-color: cornflowerblue;
+  }
+}
